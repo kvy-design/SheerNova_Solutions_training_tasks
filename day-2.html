@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="topic covered today : class , id , button , iframe, script , noscript , table , listing , filepath [relative->file relative to current page , absolute - it shows full url]">
+    <meta name="keywords" content="class,id,button,iframe,script,noscript,table,listing,filepath">
+    <title>Day-2 overview</title>
+
+
+    <style>
+        .city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+        #myHeader{
+  background-color: rgb(41, 197, 208);
+  color: rgb(4, 3, 3);
+  padding: 10px;
+} 
+      table,tr,th,td{
+        border : solid 1px black ; 
+        border-collapse: collapse;
+        height: 30px;
+        text-align: left;
+      }  
+
+      tr:nth-child(even){
+        background-color: #D6EEEE;
+      }
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Day 2</h1>
+    <!-- topic covered today : class , id , button , iframe, script , noscript , table , listing , filepath [relative->file relative to current page , absolute - it shows full url], meta tags : description , charset ,keywords, viewport, properties : og:image, og:title, og:sitename,og: description -->
+    <!-- id : The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. -->
+    <!-- however if we write same id value multiple time and apply css property to the same id value then browser still run the code without giving an error and this problem known as fault-tollerance -->
+
+    <ol>table of content
+        <li><a href="#topic1">HTML TAG - iframe</a></li>
+        <li><a href="#topic2">HTML ELEMENT - <code>&lttable&gt</code></a></li>
+        <li><a HREF="#topic3">HTML Listing</a></li>
+    </ol>
+    <article id="topic1">
+        <h3>HTML TAG - iframe</h3>
+    </article>
+    <iframe src="https://www.youtube.com/embed/qP23O70ve7k"  width="700px" height="500px" title="iframe-example" allowfullscreen></iframe>
+    <p class="para"></p>
+    <p id="para1">javascript can change the style, click the button</p>
+    <button onclick="btn()">click me</button>
+
+    <h3 align="center" id="topic2">HTML ELEMENT - <code>&lttable&gt</code ></h3>
+     <table width="50%" align="center" >
+        <tr>
+            <th width="70%">days</th>
+            <th>date</th>
+        </tr>
+        <tr>
+            <td>monday</td>
+            <td>01</td>
+        </tr>
+        <tr align="center">
+            <td colspan="2" rowspan="1" style="text-align:center;">holiday</td>
+        </tr>
+        <tr>
+            <td>tuesday</td>
+            <td>02</td>
+        </tr>
+        <tr>
+            <td>wednesday</td>
+            <td>03</td>
+        </tr>
+        <tr>
+            <td>thursday</td>
+            <td>04</td>
+        </tr>
+     </table>
+    
+
+     <h3 align="center" id="topic3">HTML LISTING</h3>
+     <dl>
+        html listing types
+        <dt>order listing
+            <dd>ex:
+                <ol>
+                    <li>apple</li>
+                    <li>banana</li>
+                </ol>
+            </dd>
+        </dt>
+        <dt>unorder listing
+            <dd>ex:
+                <ul>
+                    <li>apple</li>
+                    <li>banana</li>
+                </ul>
+            </dd>
+        </dt>
+    </dl>
+     
+    <script>
+        
+        document.getElementsByClassName("para")[0].innerHTML = "Hello from Javascript"
+        function btn(){
+            document.getElementById('para1').style.color="tomato"
+            document.getElementById('para1').style.backgroundColor="yellow"
+            document.getElementById('para1').style.fontSize="20px";
+        }
+    
+    </script>
+    <noscript>javascript not loded by browser</noscript>
+
+</body>
+</html>  
