@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://play-lh.googleusercontent.com/rTOOlidOWqQUmExtvwHiNMojYLWaCmSkdUOfN_k-Ry4DfTGpXSNoreogO4XmvXncsWsY3uWGPR-_MMG-dvDeqA"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montaga&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: montaga, serif;
+      }
+
+      #section-one {
+        background-image: url("https://static.zohocdn.com/sites/stock-images/images/discount/thanksgiving-bg-2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: darken;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 83vh;
+        max-width: 100%;
+        margin: 0;
+      }
+      .intro {
+        display: flex;
+        max-height: 80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        margin-top: 50px;
+      }
+
+      .intro > hr {
+        margin: 0;
+        border-top: none;
+        width: 60%;
+      }
+      .intro > button {
+        font-family: noto sans;
+        width: 170px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        color: #f39c12;
+        cursor: pointer;
+      }
+
+      .intro > button:hover {
+        background-color: rgba(219, 219, 219, 0.928);
+        transition: 1s;
+      }
+      #section-two {
+        background-color: #fcf4e0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
+      }
+      .section2-title {
+        text-align: center;
+        font-size: 30px;
+        padding: 50px;
+        margin-top: 0px;
+        padding-top: 70px;
+        padding-bottom: 50px;
+      }
+      #section2-items-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        width: 90%;
+        gap: 25px;
+        flex-wrap: wrap;
+      }
+      .img {
+        max-width: 100%;
+        max-height: 234px;
+        border-radius: 5px;
+      }
+      .section2-item-one {
+        flex:1;
+        min-width:250px;
+      }
+      p[draggable="true"] {
+        font-size: 20px;
+      }
+      p[draggable="false"] {
+        font-family: noto sans;
+        font-size: 13px;
+        text-align: left;
+      }
+      #section-three-container {
+        background-color: white;
+        margin: 0;
+        min-height: 100vh;
+        max-width: 100%;
+        width:100%;
+      }
+      #section-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+        
+
+      }
+      #section3-items-container {
+        display: flex;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+      }
+      .section3-item1 {
+        background-color: #f39c12;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        width:clamp(280px,40%,600px);
+        height: 300px;
+        margin-top: 20px;
+        padding: 50px;
+      }
+      #section-three > p {
+        font-size: 25px;
+        margin-bottom: -5px;
+      }
+      .section3-item1 > button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        color: #f39c12;
+        border-radius: 3px;
+        flex-shrink: 0;
+      }
+      .section3-item2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      #section-three {
+  height: auto;          /* or min-height: 500px */
+  padding: 50px 50px 20px;
+}
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id="section-one" align="center">
+      <div class="intro">
+        <p class="" style="font-size: 32px; margin-top: -10px">
+          Feast on Fantastic Deals
+        </p>
+        <hr style="margin-top: 5px" />
+        <p style="font-size: 105px; margin: 20px">Thanks Giving</p>
+        <hr />
+        <p style="font-size: 32px; margin-top: 25px; margin-bottom: 25px">
+          Savings Bonanza!
+        </p>
+        <button style="font-size: 14px">Get Started Now</button>
+      </div>
+    </div>
+     
+    
+    <div id="section-two">
+      <p class="section2-title">
+        Handpicked Thanksgiving specials crafted just for you!
+      </p>
+      <div id="section2-items-container">
+        <div class="section2-item-one">
+          <img
+            class="img"
+            src="https://static.zohocdn.com/sites/stock-images/images/discount/game.jpeg"
+          />
+          <p draggable="true">Gaming Gadgets</p>
+          <p draggable="false">
+            Immerse yourself in the gaming world with the latest consoles,
+            controllers, VR gear, gaming headsets, and powerful graphics
+            cards.Elevate your gaming experience with high-performance
+          </p>
+        </div>
+        <div class="section2-item-one">
+          <img
+            class="img"
+            src="https://static.zohocdn.com/sites/stock-images/images/discount/audio.jpeg"
+          />
+          <p draggable="true">Audio and Entertainment</p>
+          <p draggable="false">
+            Immerse yourself in surprior sound quality with wireless speakers,
+            headphones, and earbuds. Upgrade your home entertainment system with
+            soundbars and home theater systems.Find the right audio accessories,
+            from cables to adapters
+          </p>
+        </div>
+
+        <div class="section2-item-one">
+          <img
+            class="img"
+            src="https://static.zohocdn.com/sites/stock-images/images/discount/camera.jpg"
+          />
+          <p draggable="true">Cameras and Photography</p>
+          <p draggable="false">
+            Capture every moment with digital cameras, action cameras, and
+            camera accessories like lenses,tripods, and bags. Explore the skies
+            with drones or capture the nostalgia with instant cameras.
+          </p>
+        </div>
+      </div>
+    </div>
+     
+    <div id="section-three-container">
+      <div id="section-three">
+        <small>PRICING PLANS</small>
+        <p>Premium plans just for your family!</p>
+        <div id="section3-items-container">
+          <div class="section3-item1" align="center">
+            <div class="section3-item2">
+              <small>Essential Shopper</small>
+              <h1>$99</h1>
+              <p>
+                Dive into the world of online shopping with our essential
+                shopper plan. Enjoy unlimited access to a variety of products
+                with no listing restrictions.
+              </p>
+            </div>
+            <button>Purchase</button>
+          </div>
+          <div class="section3-item1" align="center">
+            <div class="section3-item2">
+              <small>Pro Fashionista</small>
+              <h1>$199</h1>
+              <p>
+                Elevate your style game with the pro fashionista plan. Unlock
+                advanced analytics to stay on top of the latest trends
+              </p>
+            </div>
+            <button>Purchase</button>
+          </div>
+       </div>
+
+        <hr
+          style="color: rgb(199, 10, 10);  width:100%; border-top:none; margin-top:20px;"
+        />
+                    <footer align="center" style="padding-bottom:50px">Privacy Policy | Copyright © 2023</footer>
+
+      </div>
+    </div>
+
+  </body>
+</html>
