@@ -41,10 +41,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 83vh;
-        max-width: 100%;
+        min-height: 83vh;
+        min-width: 100%;
         margin: 0;
       }
+      
       .intro {
         display: flex;
         max-height: 80%;
@@ -81,6 +82,7 @@
         justify-content: center;
         align-items: center;
         max-width: 100%;
+        min-height: 100vh;
         margin: 0;
       }
       .section2-title {
@@ -100,9 +102,10 @@
         flex-wrap: wrap;
       }
       .img {
-        max-width: 100%;
-        max-height: 234px;
+        width: 100%;
+        height: 234px;
         border-radius: 5px;
+        object-fit: cover;
       }
       .section2-item-one {
         flex:1;
@@ -144,6 +147,16 @@
         margin: 0;
         flex-wrap: wrap;
       }
+
+      /*@media screen and (min-width: 700px) and (max-width){
+      
+        .section3-item1{
+          min-height: 350px;
+          max-height: 350px;
+          flex-direction: column;
+        }
+
+      } */
       .section3-item1 {
         background-color: #f39c12;
         border-radius: 2px;
@@ -153,13 +166,14 @@
         justify-content: space-around;
         color: white;
         width:clamp(280px,40%,600px);
-        height: 300px;
-        margin-top: 20px;
+        min-height: 300px;
+        margin-top: 10px;
         padding: 50px;
       }
       #section-three > p {
         font-size: 25px;
         margin-bottom: -5px;
+        min-width: none;
       }
       .section3-item1 > button {
         width: 100%;
@@ -177,9 +191,28 @@
 
       #section-three {
   height: auto;          /* or min-height: 500px */
-  padding: 50px 50px 20px;
+  padding: 50px 20px 30px;
 }
 
+      @media screen and (min-width: 390px) and (max-width: 700px){
+        #section2-items-container{
+          flex-direction: column;
+          align-items: center;
+        }        
+      }
+      @media  screen and (max-width: 900px) {
+        #section3-items-container{
+          flex-direction: column;
+          justify-content: center;
+          max-width:900px;
+        }
+        .section3-item1{
+          max-width:100%;
+        
+        }
+      }
+
+      
 
 
     </style>
