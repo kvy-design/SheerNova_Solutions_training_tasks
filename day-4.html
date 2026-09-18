@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-4</title>
+</head>
+<body>
+    <!-- complited topic : samp, code , pre ,kbd ,detail,summary, html form , html form all inputs , all attribuets -->
+    <h1 align="center">Day 4</h1>
+    <hr>
+    <h2>Computercode :</h2>
+     <pre>
+code element:
+        <code>  
+            x=5;
+            y=6;
+            z=x+y;
+        </code>
+samp element:
+        <samp>output : 11</samp>
+kbd element:
+    Save the document by pressing <kbd>Ctrl + S</kbd>
+    </pre>
+    <hr>
+    <h2>sementic elements :</h2>
+    <p>sementic elements are those html elements that they clearly defines the content</p>
+    <p>ex of semantic html tags :
+        <i>
+            table , section , article , footer , aside , nav , details , summary , figure 
+        </i>
+    </p>
+            
+    <h4>detail tag : </h4>
+        
+    <details>
+        <summary>Summary</summary>
+        <p>summary should be first element of detail tag and detail tag used to open or hide the content</p>
+    </details>
+<hr>
+<h2> useful character entities</h2>
+<p>Copyright : &copy;</p>
+<p>registered trademark : &reg;</p>
+<p>trademark : &trade;</p>
+<p> &#128511; &#128514; &#128517;</p>
+<hr>
+<h2>html form :</h2>
+<form method="post" target="_blank" action="login" enctype="text/plain">
+    <fieldset>
+        <legend>Demo form</legend>
+    <label>First name :</label>
+    <input type="text" name="fn" value="kavya">
+    <br><br>
+    <label>Last name :</label>
+    <input type="text" name="ln" value="patel">
+    <br><br>
+    <label>gender :</label>
+    <input type="radio" name="fml"><label>female</label>
+    <input type="radio" name="ml"><label>Male</label>
+    <br><br>
+    <label>type of vehicles you have:</label>
+    <br>
+    <input type="checkbox" name="bike"><label>I have Bike</label>
+    &nbsp;&nbsp;<select id="bike" name="bike">
+        <option>bajaj</option>
+        <option>honda</option>
+        <option>other</option>
+    </select>
+    <br>
+    <input type="checkbox" name="car"><label>I have Car</label>
+    &nbsp;&nbsp;<select id="car">
+        <option>BMW</option>
+        <option>mercidies</option>
+        <option>other</option>
+    </select>
+    <br>
+    <input type="checkbox" name="activa"><label>I have Activa</label>
+    &nbsp;&nbsp;<select id="active">
+        <option>activa</option>
+        <option>jupyter</option>
+        <option>other</option>
+    </select>
+    <br><br>
+    <label>Please select your city</label>
+    <br>
+    <input list="browser">
+    <datalist id="browser">
+        <option value="Vadodara">
+        <option value="Anand">
+        <option value="Surat">
+    </datalist>
+    <br><br>
+    
+    <label>leave your concerns here:</label>
+    <br><textarea name="msg" rows="5" cols="30" placeholder="comment">leave msg here :
+    </textarea>
+    <br><br>
+    <input type="submit">
+    </fieldset>
+    
+</form>
+
+<form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+    <Fieldset>
+        <legend>important exercise</legend>
+        <label>pattern : </label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-23-456" required>
+        <br><br>
+        <label>calc : </label>
+        <input type="range" value="50" name="a">
+        <input type="number" value="50" name="b">
+        <output for="a b" name="x"></output>
+        <br><br>
+        <label>readonly : </label>
+        <input type="text" value="kavya" readonly>
+        <br><br>
+        <label>disabled : </label>
+        <input type="text" value="kavya" disabled>
+        <br><br>
+        <label>size : </label>
+        <input type="text" size="1"> 
+        <br><br>
+        <label>
+            maxlength:
+        </label>
+        <input type="text" maxlength="4" >
+        <br><br>
+        <label>multiple : </label>
+        <input type="file" multiple >
+        <br><br>
+        <label>required : </label>
+        <input type="text" value="kvy" required>
+        <br><br>
+        <input type="image" src="./arrow.png" width="40px" height="40px" alt="submit btn">
+        
+    </Fieldset>
+</form>
+<hr>
+<h2>HTML MEDIA</h2>
+<video width="320px" height="240px" controls >
+    <source src="https://imdb-video.media-imdb.com/vi504668441/1434659607842-pgv4ql-1564507587273.mp4?Expires=1789820745&Signature=oPkgfdMnf~EiXt5Di9Tdar0WPGB-XMcljcS8d6wv98hisaXvd7jbsnfnjg9g7BSno-10FiqFqUMCsCuI3lntZUkk85B3E6MBl96IoZCmMBjKj1mSg9ejRBNq12-jBp43s6s0SPHi6h2O3tMD6JFicC8gpRzX4VF2kOJK2czKAfN1cfS8kpdk30858F039glXh1hj1EiK~CRF8TC4~2i3AOg45KDIJJNcj6xzLKPm3siIXUnK2uaB0TxqxXcMs0LDiKdeKgcsZcp5lGm0yaw2O3my-smT-EwgTqPrK8HH4uoDpsTaZdSB3UfqEfYh1fi-K8rDTkREdK84gbqzne~-ow__&Key-Pair-Id=APKAIFLZBVQZ24NQH3KA">
+</video>
+
+<hr>
+<h2>HTML API</h2>
+
+<h4>geolocation api</h4>
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
+
+</body>
+</html>
