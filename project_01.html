@@ -24,11 +24,14 @@
     <style>
         *{
             box-sizing: border-box;
+            line-height: 1.3;
         }
       body {
         margin: 0;
         padding: 0;
         font-family: montaga, serif;
+        overflow-x: hidden;
+        overflow-y: scroll;
       }
 
       #section-one {
@@ -41,40 +44,46 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 83vh;
-        min-width: 100%;
-        margin: 0;
+        height: 83vh;
       }
       
       .intro {
         display: flex;
-        max-height: 80%;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         color: white;
-        margin-top: 50px;
+      
       }
 
       .intro > hr {
-        margin: 0;
+    
+        width:56vw;
         border-top: none;
-        width: 60%;
+        color: white;
+      
       }
       .intro > button {
         font-family: noto sans;
-        width: 170px;
-        height: 40px;
+        width: 15vw;
+        height: 6vh;
         border-radius: 5px;
         border: none;
         color: #f39c12;
         cursor: pointer;
+        
       }
 
       .intro > button:hover {
         background-color: rgba(219, 219, 219, 0.928);
         transition: 1s;
       }
+      .header{
+        font-size: 15vh;
+        margin: 2vh;
+      }
+
+
       #section-two {
         background-color: #fcf4e0;
         display: flex;
@@ -87,23 +96,22 @@
       }
       .section2-title {
         text-align: center;
-        font-size: 30px;
+        font-size: 4vh;
         padding: 50px;
-        margin-top: 0px;
         padding-top: 70px;
         padding-bottom: 50px;
       }
       #section2-items-container {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 2vh;
         width: 90%;
-        gap: 25px;
+        gap: 2vw;
         flex-wrap: wrap;
       }
       .img {
-        width: 100%;
-        height: 234px;
+        /* width:29vw;
+        height: 30vh; */
         border-radius: 5px;
         object-fit: cover;
       }
@@ -112,11 +120,11 @@
         min-width:250px;
       }
       p[draggable="true"] {
-        font-size: 20px;
+        font-size: 3vh;
       }
       p[draggable="false"] {
         font-family: noto sans;
-        font-size: 13px;
+        font-size: 2vh;
         text-align: left;
       }
       #section-three-container {
@@ -133,7 +141,8 @@
         align-items: center;
         margin-top: 20px;
         gap: 10px;
-        
+        height: auto;          /* or min-height: 500px */
+        padding: 50px 20px 30px;
 
       }
       #section3-items-container {
@@ -148,15 +157,6 @@
         flex-wrap: wrap;
       }
 
-      /*@media screen and (min-width: 700px) and (max-width){
-      
-        .section3-item1{
-          min-height: 350px;
-          max-height: 350px;
-          flex-direction: column;
-        }
-
-      } */
       .section3-item1 {
         background-color: #f39c12;
         border-radius: 2px;
@@ -166,49 +166,121 @@
         justify-content: space-around;
         color: white;
         width:clamp(280px,40%,600px);
-        min-height: 300px;
+        height: 300px;
         margin-top: 10px;
         padding: 50px;
       }
       #section-three > p {
-        font-size: 25px;
+        font-size: 3.5vh;
         margin-bottom: -5px;
-        min-width: none;
+        
       }
-      .section3-item1 > button {
-        width: 100%;
-        height: 40px;
+      .section3-item1 > button {     
+        width: 20vw;
+        height: 5vh;
         border: none;
         color: #f39c12;
         border-radius: 3px;
+        cursor: pointer;
         flex-shrink: 0;
+      }
+      .section3-item1 > button:hover{
+        background-color: rgba(219, 219, 219, 0.928);
+        transition: 1s;
       }
       .section3-item2 {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        font-size: 2.3vh;
       }
 
       #section-three {
-  height: auto;          /* or min-height: 500px */
-  padding: 50px 20px 30px;
-}
+        
+      }
 
-      @media screen and (min-width: 390px) and (max-width: 700px){
+      
+    
+
+      @media screen and (min-width:1024px){
+        #section-one{
+          min-width : 100vw;
+          height: 83vh;
+        }
+
+        #section-three{
+          min-width : 100vw;
+          min-height: 100vh;
+          height: 100vh;
+        }
+        .intro > hr {
+          width: 60vw;
+        }
+
+        .section3-item1{
+          min-width:35vw;
+          min-height: 51vh;
+        }
+
+        #section-two{
+          min-width : 100vw;
+          height: 100vh;
+        }
+
+        .img{
+          width:28vw;
+          height: 35vh;
+        }
+      }
+      @media screen and (max-width:768px){
+        
+        #section-one{
+          max-width: 100vw;
+          min-height: 83vh;   
+          padding: 20px;
+        }
+       
+        .intro > hr {
+          width: 60vw;
+        }
+        .intro > button {
+          width: 50vw;
+        }
+
         #section2-items-container{
           flex-direction: column;
           align-items: center;
-        }        
-      }
-      @media  screen and (max-width: 900px) {
-        #section3-items-container{
-          flex-direction: column;
-          justify-content: center;
-          max-width:900px;
+        }  
+
+        .img{
+          width:70vw;
+          height: 50vh;
         }
-        .section3-item1{
-          max-width:100%;
         
+         .section3-item1{
+          min-width:80vw;
+          min-height: 300px;
+        }
+        
+        .section2-para{
+          width:80vw;
+
+        }
+      
+      }
+
+      @media screen and (min-width:768px) and (max-width:1024px){
+        .img{
+          width:80vw;
+          height: 35vh;
+        }
+
+         #section2-items-container{
+          flex-direction: column;
+          align-items: center;
+        }  
+        .intro > hr {
+          width: 60vw;
         }
       }
 
@@ -221,16 +293,16 @@
   <body>
     <div id="section-one" align="center">
       <div class="intro">
-        <p class="" style="font-size: 32px; margin-top: -10px">
+        <p class="" style="font-size: 5vh; margin-top: -10px">
           Feast on Fantastic Deals
         </p>
-        <hr style="margin-top: 5px" />
-        <p style="font-size: 105px; margin: 20px">Thanks Giving</p>
+        <hr style="margin-top: 2vh" />
+        <p class="header">Thanks Giving</p>
         <hr />
-        <p style="font-size: 32px; margin-top: 25px; margin-bottom: 25px">
+        <p style="font-size: 5vh; margin-top: 25px; margin-bottom: 25px">
           Savings Bonanza!
         </p>
-        <button style="font-size: 14px">Get Started Now</button>
+        <button style="font-size: 2.2vh">Get Started Now</button>
       </div>
     </div>
      
@@ -240,30 +312,36 @@
         Handpicked Thanksgiving specials crafted just for you!
       </p>
       <div id="section2-items-container">
-        <div class="section2-item-one">
+        <div class="
+        section2-item-one">
           <img
             class="img"
             src="https://static.zohocdn.com/sites/stock-images/images/discount/game.jpeg"
           />
           <p draggable="true">Gaming Gadgets</p>
-          <p draggable="false">
-            Immerse yourself in the gaming world with the latest consoles,
-            controllers, VR gear, gaming headsets, and powerful graphics
-            cards.Elevate your gaming experience with high-performance
-          </p>
-        </div>
+          <div class="section2-para">
+            <p draggable="false">
+              Immerse yourself in the gaming world with the latest consoles,
+              controllers, VR gear, gaming headsets, and powerful graphics
+              cards.Elevate your gaming experience with high-performance
+            </p>
+          </div>
+        </div> 
         <div class="section2-item-one">
           <img
             class="img"
             src="https://static.zohocdn.com/sites/stock-images/images/discount/audio.jpeg"
           />
           <p draggable="true">Audio and Entertainment</p>
-          <p draggable="false">
-            Immerse yourself in surprior sound quality with wireless speakers,
-            headphones, and earbuds. Upgrade your home entertainment system with
-            soundbars and home theater systems.Find the right audio accessories,
-            from cables to adapters
-          </p>
+          <div class="section2-para">
+            <p draggable="false">
+              Immerse yourself in surprior sound quality with wireless speakers,
+              headphones, and earbuds. Upgrade your home entertainment system with
+              soundbars and home theater systems.Find the right audio accessories,
+              from cables to adapters
+            </p>
+          </div>
+
         </div>
 
         <div class="section2-item-one">
@@ -272,18 +350,20 @@
             src="https://static.zohocdn.com/sites/stock-images/images/discount/camera.jpg"
           />
           <p draggable="true">Cameras and Photography</p>
-          <p draggable="false">
-            Capture every moment with digital cameras, action cameras, and
-            camera accessories like lenses,tripods, and bags. Explore the skies
-            with drones or capture the nostalgia with instant cameras.
-          </p>
+          <div class="section2-para">
+            <p draggable="false">
+              Capture every moment with digital cameras, action cameras, and
+              camera accessories like lenses,tripods, and bags. Explore the skies
+              with drones or capture the nostalgia with instant cameras.
+            </p>
+          </div>
         </div>
       </div>
     </div>
      
     <div id="section-three-container">
       <div id="section-three">
-        <small>PRICING PLANS</small>
+        <small style="font-size:2vh">PRICING PLANS</small>
         <p>Premium plans just for your family!</p>
         <div id="section3-items-container">
           <div class="section3-item1" align="center">
@@ -296,7 +376,7 @@
                 with no listing restrictions.
               </p>
             </div>
-            <button>Purchase</button>
+            <button style="font-size:2vh">Purchase</button>
           </div>
           <div class="section3-item1" align="center">
             <div class="section3-item2">
@@ -307,7 +387,7 @@
                 advanced analytics to stay on top of the latest trends
               </p>
             </div>
-            <button>Purchase</button>
+            <button style="font-size:2vh">Purchase</button>
           </div>
        </div>
 
