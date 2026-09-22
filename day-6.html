@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-5</title>
+
+    <style>
+
+    #div1 {
+    border: 5px dotted black;
+    padding: 35px;
+    background-color:navajowhite;
+    background-clip: border-box;  
+    }
+
+    #div2 {
+    border: 5px dotted black;
+    padding: 35px;
+    background-color: navajowhite;
+    background-clip: padding-box;
+    }
+
+    #div3 {
+    border: 5px dotted black;
+    padding: 35px;
+    background-color: navajowhite;
+    background-clip: content-box;
+    }
+    .container{
+        
+        border: 1px lightgray solid;
+        width:200px;
+        height:300px;
+        text-align: center;
+        perspective: 900px;
+    
+    }
+    .card{
+        width:100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+    .face{
+        position: absolute;
+        width:100%;
+        height:100%;
+        backface-visibility: hidden;
+        
+    }
+    .front{
+        
+        background-color: green;
+        color:white;
+    }
+    .back{
+        transform: rotateY(180deg);
+       background-color: red;
+        
+    }
+    .container:hover .card{
+        transform: rotateY(180deg);
+    }
+
+    #grad1 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+  border-radius: 50%;}
+
+    </style>
+</head>
+<body>
+    <h1>Day-6</h1>
+    
+    <h1>The background-clip Property</h1>
+
+    <p>background-clip: border-box (this is default):</p>
+    <div id="div1">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: padding-box:</p>
+    <div id="div2">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <p>background-clip: content-box:</p>
+    <div id="div3">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    
+    <h1>Conic Gradient - Pie Chart</h1>
+
+    <div id="grad1"></div>
+
+    <h1>card flip</h1>
+
+    <div class="container">
+    <div class="card">
+        <div class="face front">front</div>
+        <div class="face back">back</div>
+    </div>
+    </div>
+       
+
+   
+
+</body>
+</html>
