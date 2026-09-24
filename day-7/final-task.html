@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<body>
+    <form onsubmit="submitForm(event)">
+        <h1>Student Resul Form</h1>
+        <label>Student Name: </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label>Marks : </label>
+        <ul>
+            <li><label>Chemistry :</label> <input type="number" max="100" val="chemMarks" id="chem"></li>
+            <li><label>Maths :</label> <input type="number" max="100" val="mathsMark" id="maths"></li>
+            <li><label>Physics :</label> <input type="number" max="100" val="phyMark" id="physics"></li>
+        </ul>
+
+        <button type="submit" onclick="">submit</button>
+    </form>
+
+    <p id="description"></p>
+</body>
+
+<script src="./final-task.js"></script>
+</html>
