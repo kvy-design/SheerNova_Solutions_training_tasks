@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Processing System</title>
+</head>
+
+<body>
+
+    <h1>Student Data Processing System</h1>
+
+    <form id="studentForm">
+
+        <label>Name:</label>
+        <input
+            type="text"
+            id="name"
+            pattern="[A-Za-z]+"
+            required
+        >
+        <br><br>
+
+        <label>Email:</label>
+        <input
+            type="email"
+            id="email"
+            required
+        >
+        <br><br>
+
+        <label>Phone:</label>
+        <input
+            type="tel"
+            id="phone"
+            pattern="[0-9]{10}"
+            required
+        >
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input
+            type="date"
+            id="dob"
+            min="2000-01-01"
+            required
+        >
+        <br><br>
+
+        <label>Total Marks:</label>
+        <input
+            type="number"
+            id="marks"
+            min="0"
+            max="300"
+            required
+        >
+        <br><br>
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <h2>Statistics</h2>
+
+    <p id="statistics"></p>
+
+    <br>
+
+    <button id="sortBtn">Sort by Marks</button>
+    <button id="generateBtn">Generate Student</button>
+    <button id="processBtn">Process Students</button>
+
+    <h2>Student Records</h2>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>DOB</th>
+                <th>Age</th>
+                <th>Total Marks</th>
+                <th>Percentage</th>
+                <th>Grade</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+
+    </table>
+
+    <h2>Custom Iteration</h2>
+
+    <pre id="iteratorOutput"></pre>
+
+    <script type="module" src="day-9.final.js"></script>
+
+</body>
+</html>
