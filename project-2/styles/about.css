@@ -1,0 +1,87 @@
+.About{
+    font-family: "Space Mono", monospace;
+  font-size: 12px;
+  padding: 0 34px;
+    margin: 60px auto;
+ box-sizing: border-box; 
+}
+
+.about-para{
+    max-width: 480px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.bio-img{
+    position: relative;
+}
+.highlight{
+    width:270px;
+    position: absolute;
+    background-color: rgb(230, 0, 84) ;
+    color: white;
+    padding: 20px 0 20px 28px;
+    top:320px;
+    left:260px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.highlight >p{
+    margin: 0;
+}
+
+.h-points{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.work-exp-grid{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.work-details > h4 , .work-details > p , .work-details > date {
+    margin: 0;
+}
+
+.bio-para-1{
+     margin-bottom: 20px;
+}
+.bio-para-2{
+    margin-bottom: 40px;
+}
+
+.bio-h3{
+    margin-top: 0;
+    font-family: "Mulish", sans-serif;
+    font-size: 19px;
+}
+
+.work-details > date{
+    color: var(--gray-dark);
+}
+
+.work-experience{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 20px
+}
+
+.bio{
+    display: flex;
+    gap : 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about-h1{
+    font-size: 28px;
+    margin-bottom: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+

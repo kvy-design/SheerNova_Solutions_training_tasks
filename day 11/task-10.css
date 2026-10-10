@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.5rem;
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.form-container {
+    width: 400px;
+    padding: 0;
+    border: none;
+    box-shadow: 1px 1px 5px 2px rgba(43, 43, 43, 0.295);
+}
+
+.delete-form{
+    background-color: #f9f8f8;
+    border: none;
+    width: 400px;
+    padding: 2em;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.532) ;
+
+}
+.delete-form::backdrop{
+    background-color: #0d0d0d60;
+}
+
+.del{
+    margin-top: 10px;
+}
+.delete{
+position: relative;
+display: block;
+gap:20px;
+
+}
+
+
+.submitform {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.close{
+    width:20px;
+    font-size: 2rem;
+    position:relative;
+    top:-0.5em;
+    left: 100%;
+    cursor: pointer;
+}
+
+
+.label{
+    margin:15px
+}
+
+input:focus{
+    background-color: rgb(251, 250, 249);
+}
+.submit{
+    margin:10px;
+    position: relative;
+    
+}
+table{
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td,th{
+    padding: 6px;
+    border:solid 1px #c4c2c2;
+}
+th{
+    color: #f6f6f6;
+    background-color: #333;
+}
+tr:nth-child(even){
+    background-color: #d6d1d1;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.student-list {
+    margin-top: 30px;
+}
+
+.student-list h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+#modify-model{
+    position:absolute;
+    border: solid 1px #333;
+}
+.action-btn{
+    background-color: rgba(0, 0, 0, 0.00);
+    color: #333;
+}
+.form-container::backdrop{
+    background-color: #3333338e;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.label > input{
+    float: right;
+}

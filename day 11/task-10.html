@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+    <link rel="stylesheet" href="task-10.css">
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h1>Student Registration</h1>
+        </div>
+        <div class="buttons">
+            <button onclick="document.getElementById('form-container').showModal();">Add student</button>  
+            <button onclick="document.getElementById('delete-form').showModal()">Delete Student</button>
+        </div>
+        <dialog class="form-container" id="form-container">
+          <form class="submitform" id="submitform">
+            <div class="close" id="class" onclick="document.getElementById('form-container').close();">
+              <span>&times;</span>
+            </div>
+            <div class="name label">
+              <label>Name :</label>
+              <input type="text" id="name" name="name" maxlength="50" required>
+            </div>
+            <div class="email label">
+              <label>Email : </label>
+              <input type="email" id="email" name="email" maxlength="100" required>
+            </div>
+            <div class="phone label">
+              <label>Phone no :</label>
+              <input type="number" id="phone" name="phone" maxlength="10" pattern="[0-9]" required>
+            </div>
+            <div class="city label">
+              <label>City :</label>
+              <input type="text" id="city" maxlength="20" required>
+            </div>
+            <div align="center" id="submit" class="submit">
+              <button type="submit">Submit</button>
+            </div>
+            <p id="msg"></p>
+          </form>
+        </dialog>
+        <dialog class="delete-form" id="delete-form">
+            <form>
+                  <span class="close" onclick="document.getElementById('delete-form').close()">&times;</span>
+                <div class="del">
+                  <label style="margin-right: 5px;" >Write student id to delete student from list:</label>
+                  <input id="no" type="number" required>
+                </div>
+                <button class="del" type="submit">Done</button>
+                <p id="msg1"></p>
+              </form>
+        </dialog>
+
+          <div class="student-list">
+            <h2>Students list</h2>
+          <table width="90%">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone no</th>
+                <th >City</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+          </table>  
+        </div>
+        <dialog id="modify-model">
+            <button id="editStudent">Edit student</button>
+            <button id="deleteStudent">Delete student</button>
+            <button id="addStudent">Add student</button>
+            <button onclick="document.getElementById('modify-model').close()" id="closeModel">Close</button>
+        </dialog>
+        
+        
+        
+      </div>
+
+       
+        
+    </div>
+<script src="task-10.js"></script>
+</body>
+</html>

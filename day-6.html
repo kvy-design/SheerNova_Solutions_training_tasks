@@ -65,11 +65,84 @@
     }
 
     #grad1 {
-  height: 200px;
-  width: 200px;
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
-  border-radius: 50%;}
+        height: 200px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+        border-radius: 50%;
+    }
+
+    .container1{
+        width:200px;
+        height: 200px;
+        margin:100px auto;        
+        perspective: 600px;
+    }
+    .cube{
+        width:100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+        animation : spin 12s infinite linear;
+
+    }
+    .face1{
+        position: absolute;
+        width:200px;
+        height: 200px;
+        line-height:200px;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: rgba(255, 0, 0 , 0.5);
+        color:white;
+        border: 2px solid white;
+        
+    }
+
+    .front1{    transform: rotateY(0deg)  translateZ(100px)  }
+    .back1{    transform: rotateY(180deg)  translateZ(100px)}
+    .right{    transform: rotateY(-90deg) translateZ(100px) }
+    .left{    transform: rotateY(90deg) translateZ(100px)    }
+    .top{    transform: rotateX(90deg) translateZ(100px)   }
+    .bottom{    transform: rotateX(-90deg)  translateZ(100px)    }
+
+    @keyframes spin{
+        to{
+            transform: rotateX(0deg) rotateY(0deg);
+        }
+        from{
+            transform: rotateX(360deg) rotateY(360deg);
+        }
+    }
+
+
+    .container2{
+        width: 600px;
+        height:200px;
+        perspective: 600px;
+    }
+
+    .carsoul{
+        position: relative;
+        width: inherit;
+        height: inherit;
+        transform-style: preserve-3d;
+    }
+    .face2{
+        position: absolute;
+        width:200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        font-size:45px;
+        border-radius: 20px;
+        
+        color: white;
+        background: linear-gradient(red,yellow);
+    }
+
 
     </style>
 </head>
@@ -108,8 +181,29 @@
         <div class="face back">back</div>
     </div>
     </div>
-       
+    <h1>Cube</h1>
+    <div class="container1">
+        <div class="cube">
+            <div class="face1 front1">front</div>
+            <div class="face1 back1">back</div>
+            <div class="face1 right">right</div>
+            <div class="face1 left">left</div>
+            <div class="face1 top">top</div>
+            <div class="face1 bottom">bottom</div>
+        </div>
+    </div>
 
+    <h1>Carsoul</h1>
+    <div class="containe2">
+        <div class="carsoul">
+            <div class="face2 one">1</div>
+            <div class="face2 two">2</div>
+            <div class="face2 three">3</div>
+            <div class="face2 four">4</div>
+            <div class="face2 five">5</div>
+            <div class="face2 six">6</div>
+        </div>
+    </div>
    
 
 </body>

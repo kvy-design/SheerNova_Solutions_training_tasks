@@ -1,0 +1,141 @@
+const people = [
+  { id: 1, name: "Aisha", age: 22, city: "Mumbai", email: "aisha@mail.com", active: true },
+  { id: 2, name: "Rahul", age: 25, city: "Delhi", email: "rahul@mail.com", active: true },
+  { id: 3, name: "Neha", age: 21, city: "Mumbai", email: "neha@mail.com", active: false },
+  { id: 4, name: "Amit", age: 28, city: "Pune", email: "amit@mail.com", active: true },
+  { id: 5, name: "Sara", age: 24, city: "Delhi", email: "sara@mail.com", active: false }
+  
+];
+
+const orders = [
+  { id: 101, personId: 1, amount: 500 },
+  { id: 102, personId: 2, amount: 1200 },
+  { id: 103, personId: 1, amount: 300 },
+  { id: 104, personId: 4, amount: 800 },
+  { id: 105, personId: 2, amount: 400 },
+];
+
+let count = 0
+console.log("1.") // Print each person's name from an array of objects.
+let peopleName1 = people.map((value) => {return value.name})
+console.log("people names : ",peopleName1)
+
+
+console.log("2.") // Count how many people are marked active.
+let activePeople = people.filter((value)=>value.active)
+
+console.log("people are marked active : ",activePeople.length) 
+
+
+
+console.log("3.") //Return only the people in one city.
+let sameCity = people.reduce((acc,curr) => {
+    if(!acc[curr.city]){
+        acc[curr.city] = 0
+    }
+    acc[curr.city] ++
+
+    return acc
+},{})
+let uniquePeople = people.filter(
+    person => sameCity[person.city] === 1
+);
+const uniqueNames = uniquePeople.map(
+    person => person.name
+);
+
+console.log("people from one city : ",uniqueNames);
+
+
+
+// Find the person with a given id. If nobody matches, return "Not found".
+console.log("4.")
+const givenId = 2
+let findPersonById = people.find((findId) => findId.id === givenId)
+console.log(findPersonById ? findPersonById.name : "Not Found")
+
+
+// Add a new person. Reject the add if that id already exists.
+console.log("5.")
+const newPerson =   { id: 6, name: "kavya", age: 21, city: "Anand", email: "kavya@mail.com", active: true }
+let  idExist = people.some((value) => value.id === newPerson.id)
+if(idExist){
+console.log("Same id exist!!")
+}
+else{
+    people.push(newPerson)
+    console.log("Person added successfully")
+}
+
+
+// Update one person's email by id. Do not change the others.
+console.log("6.")
+const updatedEmailId = "kavy@mail.com" 
+const givenId1 = 6
+let isIdExist = people.find((value)=>value.id === givenId1)
+if(isIdExist){
+    isIdExist.email = updatedEmailId
+    console.log("updated email successfully!!")
+}
+else{
+    console.log("person Id not match!")
+}
+
+
+// Delete a person by id.
+console.log("7.")
+const givenId2 = 3
+let findPerson = people.find((value) => value.id === givenId2)
+if(findPerson){
+    people.pop(findPerson)
+    console.log("delete person successfully!")
+} 
+else{
+     console.log("person Id not match!")
+}
+
+
+// Sort the people by age, from youngest to oldest.
+console.log("8")
+let sortAge = people.sort((a,b) => a.age - b.age)
+console.log(sortAge)
+
+
+
+// Group the people by city and count how many are in each city
+console.log("9.")
+let countPeopleFromCity = people.reduce((acc,curr) =>{
+    if(!acc[curr.city]){
+        acc[curr.city] = 0
+    }
+    acc[curr.city] ++;
+    return acc
+},{})
+console.log(countPeopleFromCity)
+
+
+
+// From a list of orders with personId and amount, return each person with their total amount, sorted from highest to lowest.
+console.log("10.")
+let getTotalAmountById = orders.reduce((acc,curr) =>{
+    if(!acc[curr.personId]){
+        acc[curr.personId] = 0
+    }
+
+    acc[curr.personId] += curr.amount
+    return acc
+},{})
+let sortAmount = Object.entries(getTotalAmountById).sort((a,b) =>  b[1] - a[1])
+console.log(sortAmount)
+
+// let personAmount = orders.reduce((acc , curr) =>{
+//         if(!acc[curr.personId]){
+//             acc[curr.personId] = 0
+//         } 
+//         acc[curr.personId] += curr.amount ; 
+//         return acc
+// },{})
+
+// let sortPersonAmount = Object.entries(personAmount).sort((a,b) => b[1] - a[1])
+
+// console.log(sortPersonAmount)
