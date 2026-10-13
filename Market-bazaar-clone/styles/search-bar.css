@@ -2,6 +2,7 @@
     display: flex;
     width: 230px;
     height: auto;
+    padding:8px;
     background-color: rgb(250, 250, 250);
     border:none;
     justify-content: space-between;
@@ -28,11 +29,19 @@
     overflow: hidden;
 }
 
-.search-bar > div > svg{
+ .search-icon > svg{
     margin: 0 10px 0 32px;
     width : 24px;
     height: 24px;
-    flex-shrink: 0;
+    flex-shrink: 0;  
+}
+
+.search-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1.5px solid #9ca3af25;
+
 }
 
 .search-bar >div> input{
@@ -41,6 +50,7 @@
     height: 100%;
     font-size: 14px;
     padding:8.5px 0 8.5px 14px ;
+    background-color:rgb(250, 250, 250);
 
 }
 .search-bar >div> input::placeholder{

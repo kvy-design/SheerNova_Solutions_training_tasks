@@ -1,0 +1,332 @@
+
+.nav1 {
+  position: relative; 
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.nav1:hover {
+  background-color: #f3f4f6; 
+}
+
+.nav1.mega-menu,
+.nav1.full-screen-menu {
+  position: static;
+}
+
+
+.nav1
+  :is(
+    .child-home,
+    .child-pages,
+    .child-user-account,
+    .child-vendor-account,
+    .child-mega-menu,
+    .child-full-screen
+  ) {
+  position: absolute;
+  top: calc(100% + 8px);
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(43, 52, 69, 0.12);
+  z-index: 999;
+  cursor: default;
+  text-align: left;
+  font-weight: 400;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+}
+
+/* show on hover (nav item or the dropdown itself) */
+.nav1:hover
+  > div
+  > :is(
+    .child-home,
+    .child-pages,
+    .child-user-account,
+    .child-vendor-account,
+    .child-mega-menu,
+    .child-full-screen
+  ),
+.nav1
+  :is(
+    .child-home,
+    .child-pages,
+    .child-user-account,
+    .child-vendor-account,
+    .child-mega-menu,
+    .child-full-screen
+  ):hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+:is(
+  .child-home,
+  .child-pages,
+  .child-user-account,
+  .child-vendor-account
+)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 12px;
+}
+.child-mega-menu::before,
+.child-full-screen::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -32px;
+  height: 32px;
+}
+
+/* ---------- 3. small dropdowns: Home / Pages / User / Vendor ---------- */
+.nav1
+  :is(.child-home, .child-pages, .child-user-account, .child-vendor-account) {
+  left: 50%;
+  width: 200px;
+  margin-left: -100px; /* half of width -> centred under the item */
+  padding: 8px 0;
+  gap: 0; /* cancels the old flex gap in index.css */
+  border-radius: 10px;
+}
+.nav1
+  :is(.child-home, .child-pages, .child-user-account, .child-vendor-account)
+  ul {
+  list-style: none;
+}
+
+/* rows (Market, Orders, Dashboard ...) */
+.nav1 .child-menu {
+  position: relative;
+  height: 37px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #2b3445;
+  background: transparent;
+}
+.nav1 .child-menu:hover {
+  background: #f3f4f6;
+}
+
+/* flyout to the right (.market-childs, .user-orders-childs ...) */
+.nav1 .child-menu > div {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 8px); /* 8px gap, bridged below */
+  width: 180px;
+  padding: 8px 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(43, 52, 69, 0.12);
+  cursor: default;
+
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s;
+}
+.nav1 .child-menu:hover > div {
+  opacity: 1;
+  visibility: visible;
+}
+.nav1 .child-menu > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -12px;
+  width: 12px;
+}
+
+/* flyout items: Home uses <div class="market-1">, the others use <a class="child-link"> */
+.nav1 .child-menu > div ul > div,
+.child-link {
+  display: flex;
+  align-items: center;
+  height: 37px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #2b3445;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.nav1 .child-menu > div ul > div:hover,
+.child-link:hover {
+  background: #f3f4f6;
+}
+.nav1 .child-menu > div ul > div svg {
+  display: none; /* no arrows on flyout items */
+}
+
+/* ---------- 4. MEGA MENU (4 columns) ---------- */
+.child-mega-menu {
+  left: 0;
+  right: 0;
+  margin: 0 auto; /* centred */
+  width: min(970px, calc(100% - 32px));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 12px;
+}
+
+.mega-col {
+  padding: 36px 32px 40px;
+}
+.mega-col:nth-child(odd) {
+  background: #f9fafb;
+}
+.mega-col:first-child {
+  border-radius: 12px 0 0 12px;
+}
+.mega-col:last-child {
+  border-radius: 0 12px 12px 0;
+}
+
+.mega-group + .mega-group {
+  margin-top: 28px;
+}
+
+.mega-heading {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b3445;
+  margin-bottom: 18px;
+}
+
+.mega-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mega-links a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2b3445;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.mega-links a:hover {
+  color: #d23f57;
+}
+
+/* ---------- 5. FULL SCREEN MENU (sidebar + panel) ---------- */
+.child-full-screen {
+  left: 0;
+  width: 100%; /* full width of .nav-container */
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: repeat(6, 53px) 1fr; /* 6 sidebar rows + spare row */
+}
+
+/* each category is "transparent": its label sits in the sidebar column,
+   its panel in the right column */
+.fs-cat {
+  display: contents;
+}
+
+.fs-label {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  font-size: 14px;
+  color: #2b3445;
+  border-right: 1px solid #f3f4f6;
+  cursor: pointer;
+}
+/* hovered category, or the first one when nothing is hovered yet */
+.fs-cat:hover .fs-label,
+.child-full-screen:not(:has(.fs-cat:hover)) .fs-cat:first-child .fs-label {
+  background: #f3f4f6;
+}
+
+.fs-panel {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  display: none;
+  padding: 36px 48px 24px;
+  max-height: 490px;
+  overflow-y: auto;
+}
+/* first panel by default; otherwise the hovered one */
+.fs-cat:first-child .fs-panel,
+.fs-cat:hover .fs-panel {
+  display: block;
+}
+.child-full-screen:has(.fs-cat:hover) .fs-cat:not(:hover) .fs-panel {
+  display: none;
+}
+
+.fs-section {
+  margin-bottom: 36px;
+}
+
+.fs-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2b3445;
+  margin-bottom: 22px;
+}
+
+.fs-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px 16px;
+}
+
+.fs-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 8px;
+  font-size: 14px;
+  color: #2b3445;
+  text-decoration: none;
+  min-height: 32px;
+  transition: color 0.15s ease;
+}
+.fs-item:hover {
+  color: #d23f57;
+}
+
+/* small dark icon (Fashion) */
+.fs-icon {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236B7280'%3E%3Cpath d='M16 3l5 3-2 5-3-1v11H8V10l-3 1-2-5 5-3a4 4 0 0 0 8 0z'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+}
+
+/* square thumbnail (Electronics) - set the picture inline:
+   <span class="fs-thumb" style="background-image:url(img/cable.png)"></span> */
+.fs-thumb {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #f3f5f9 center / cover no-repeat;
+}
+
+/* ---------- 6. small screens: hide the wide menus ---------- */
+@media (max-width: 900px) {
+  .child-mega-menu,
+  .child-full-screen {
+    display: none;
+  }
+}

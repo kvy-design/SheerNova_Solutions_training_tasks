@@ -7,193 +7,178 @@
 @import "./section6.css";
 @import "./section7.css";
 @import "./section8.css";
-
-
+@import "./nav-menus.css";
 
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
-    font-family:'Geist','Geist Fallback' ;
-    color: #222;
-    background: #fff;
+  font-family: "Geist", "Geist Fallback";
+  color: #222;
+  background: #fff;
 }
-.top-bar{
-    font-size: 12px;
-    color:#fff;
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
+.top-bar {
+  font-size: 12px;
+  color: #fff;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
 }
-.right-bar{
-    font-size: 13px;
-    display: flex;
-    gap:0.5rem;
-    align-items: center;
+.right-bar {
+  font-size: 13px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
-.right-bar > button{
-    background-color:#111827 ;
-    border: none;
-    color:white;
-    width : 40px;
-    height: 23px;
-    text-align: center;
-    border-radius: 50px;
-    font-weight: bold;
-    padding: 2px;
-}
-
-.left-bar{
-    display: flex;
-    color: white;
-    gap : 10px;
-}
-.login{
-    text-decoration: none;
-}
-.cart-btn{
-    text-decoration: none;
+.right-bar > button {
+  background-color: #111827;
+  border: none;
+  color: white;
+  width: 40px;
+  height: 23px;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 2px;
 }
 
-.icons1{
-    display: flex;
-    gap: 18px;
+.left-bar {
+  display: flex;
+  color: white;
+  gap: 10px;
+}
+.login {
+  text-decoration: none;
+}
+.cart-btn {
+  text-decoration: none;
 }
 
-.nav-container{
-    position: relative;
-    width: 100%;
-    height: 80px;
-}
-.nav-container > div{
-    height: 100%;
-    width: 100%;
-    padding-left: 27px;
-    padding-right: 30px;
-}
-.nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.icons1 {
+  display: flex;
+  gap: 18px;
 }
 
-
-.navbars{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 500;
-    font-family:'Geist', 'Geist Fallback' ;
-
+.nav-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+.nav-container > div {
+  height: 100%;
+  width: 100%;
+  padding-left: 27px;
+  padding-right: 30px;
+}
+.nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav1{
-    padding: 5.6px 8px;
-    margin: 0px ;
+.navbars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Geist", "Geist Fallback";
+}
+
+.nav1 {
+  padding: 5.6px 8px;
+  margin: 0px;
 }
 .nav1 > div {
-    display: flex;
-    align-items: center;
-    gap: 2.4px;
+  display: flex;
+  align-items: center;
+  gap: 2.4px;
 }
-.user{
-    background-color: transparent;
-    border: transparent;
-}
-.child-home{
-    width : 168px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border-radius: 10px;
-    box-shadow: 0.5px 0.5px 3px 0.1px;
-    display: none;
+.user {
+  background-color: transparent;
+  border: transparent;
 }
 
-.child-menu{
-    
-    font-size: 13px;
-    height: 40px;
-    padding: 10px 10px;
-    display : flex;
-    align-items: center;
-    justify-content: space-between;
+.child-menu {
+  font-size: 13px;
+  height: 40px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.child-menu:hover{
-    cursor: pointer;
-    background-color: #eeeeeed8;
+.child-menu:hover {
+  cursor: pointer;
+  background-color: #eeeeeed8;
 }
 
 .cart-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 .cart-badge {
-    position: absolute;
-    font-family: 'Geist','Geist Fallback';
-    top: -17px;
-    right: -17px;
-    min-width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    background-color: #111827;
-    color: white;
-    padding: 0.18em;
-    border-radius: 50%;
-    font-size: 12px;
-    font-weight:500;
-    
+  position: absolute;
+  font-family: "Geist", "Geist Fallback";
+  top: -17px;
+  right: -17px;
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #111827;
+  color: white;
+  padding: 0.18em;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.icons1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap : 18px;
-    height: 100%;
+.icons1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  height: 100%;
 }
 
 .login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
 
 .flash-cards1,
@@ -204,25 +189,96 @@ body {
 .section7,
 .section8,
 .section4 {
-    width: 100%;
-    max-width: 1552px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1552px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .product-slider {
-     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 80px;
-    padding: 0 24px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 .slider {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 1. Anchor the dropdown to the Home item */
+.nav1 {
+  position: relative;
+}
+
+/* 2. Hide the dropdown by default and place it under "Home" */
+.child-home {
+  position: absolute;
+  top: 100%; /* directly below the Home button */
+  left: 0;
+  padding: 6px 0;
+  width: 220px;
+  background: #fff;
+  z-index: 100;
+  padding: 6px 0;
+
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+}
+
+/* 3. Show it when hovering Home (or the dropdown itself) */
+.nav1:hover > div > .child-home,
+.child-home:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 4. Remove default list styling inside the dropdown */
+.child-home ul {
+  list-style: none;
+}
+
+/* 5. Second level (Market 1, Market 2, ...) opens to the right on hover */
+.child-menu {
+  position: relative;
+}
+
+.child-menu > div {
+  /* .market-childs, .gadget-childs, etc. */
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow:  rgba(43, 52, 69, 0.05) 0px 0px 24px 0px, rgba(43, 52, 69, 0.05) 0px 3px 6px 0px;;
+  padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+  opacity: 0;
+
+
+
+  visibility: hidden;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s;
+}
+
+.child-menu:hover > div {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* @media (min-width: 1200px){

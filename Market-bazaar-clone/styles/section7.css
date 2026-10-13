@@ -1,11 +1,26 @@
+.img7{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .img7 > img{
     display:flex;
     justify-content: center;
     width: 100%;
     height: 250px;
+    isolation: isolate;
+    overflow: hidden;
     border-radius: 10px;
     object-fit: cover;
+    transition: 0.5s ease-in-out;
 }
+
+
+.img7 > img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .cards7{
     width: 100%;
     height: 426.667px;
@@ -20,10 +35,14 @@
     flex: 1 1 0;          /* 3 equal columns (flex-basis: 1fr is invalid) */
     min-width: 0;
     padding: 24px;
-    border: 1px solid #f0f0f3;
+    border: 1px solid #F5F5F5;
     border-radius: 16px;
     background: #fff;
     box-sizing: border-box;
+}
+
+.list7:hover{
+    box-shadow: 0px 1px 3px rgba(3, 0, 71, 0.09);
 }
 
 .img7{
@@ -45,11 +64,16 @@
 
 }
 
+
 .article7 >a> p{
-font-size: 18px;
+font-size: 14px;
 font-weight: 600;
 line-height: 1.5;
 font-family: 'Geist', 'Geist Fallback';
+}
+.article7 >a> p:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .article7{
