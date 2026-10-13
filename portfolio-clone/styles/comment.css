@@ -1,0 +1,54 @@
+.Testimonials{
+    font-family: "Space Mono", monospace;
+  font-size: 12px;
+  padding: 0 34px;
+    margin: 60px auto;
+ box-sizing: border-box; 
+}
+
+.client-img > img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.comment-p{
+    margin-bottom: 70px;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.client-comments{
+    display: flex;
+    justify-content: center;
+    gap : 30px;
+}
+
+.client-occ{
+    margin-bottom: 15px;
+    color: var(--gray-dark);
+}
+
+.client-name{
+    font-weight: 600;
+}
+
+.client-comment{
+    width : 250px;
+    border-radius: 20%;
+    /* text-wrap: inherit; */
+}
+
+@media(max-width:790px){
+    .client-comments{
+        flex-wrap: wrap;
+    }
+}

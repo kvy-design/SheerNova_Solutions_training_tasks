@@ -1,0 +1,53 @@
+@import "./gallery.css";
+@import "./navbar.css";
+@import "./header.css";
+@import "./services.css";
+@import "./about.css";
+@import "./comment.css";
+@import "./blog-post.css";
+@import "./contact.css";
+@import "./footer.css";
+
+:root{
+    --red : rgb(255, 4, 96);
+    --gray-dark : rgb(91, 91, 91);;
+}
+
+body,p,h2,date{
+    margin: 0;
+}
+
+.gallary, 
+.navbar,
+.About,
+.Services,
+.header,
+.Skills,
+.Testimonials,
+.contact,
+.Blog-posts{
+    width: 100%;
+    max-width: 1552px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 34px;
+    box-sizing: border-box;
+}
+
+/* img { max-width: 100%; height: auto; } */
+
+@media (max-width: 768px) {
+  .gallary, .navbar, .About, .Services, .header,
+  .Skills, .Testimonials, .contact, .Blog-posts {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .gallary, .navbar, .About, .Services, .header,
+  .Skills, .Testimonials, .contact, .Blog-posts {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

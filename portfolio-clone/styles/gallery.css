@@ -1,0 +1,26 @@
+.gallary{
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 15px;
+    align-items: start;
+
+}
+
+.gallary-grid > img {
+    display: block;
+    width : 100%;
+    height: auto;
+
+
+}
+@media(max-width:520px){
+    .img-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}

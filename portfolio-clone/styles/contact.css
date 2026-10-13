@@ -1,0 +1,158 @@
+:root {
+  --pink: #ff2d63;
+  --dark: #222222;
+  --text: #111111;
+  --muted: #777777;
+  --line: #333333;
+  --panel: #f8f9fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-size: 12px;
+  color: var(--text);
+}
+
+a { text-decoration: none; color: inherit; }
+
+.contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 34px 60px;
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.section-heading p {
+  margin: 4px 0 8px;
+  font-size: 10px;
+}
+
+.squiggle {
+  width: 44px;
+  height: 8px;
+  fill: none;
+  stroke: var(--pink);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 28px;
+  
+}
+
+/* ---- form ---- */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input { flex: 1; min-width: 0; }
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  padding: 6px 0;
+  font-family: inherit;
+  font-size: 11px;
+  color: var(--text);
+  outline: none;
+  border-radius: 0;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: var(--pink);
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* ---- buttons ---- */
+.btn {
+  font-family: inherit;
+  font-size: 10px;
+  border: 0;
+  cursor: pointer;
+  padding: 11px 14px;
+}
+
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+
+.btn-dark:hover { background: var(--pink); }
+
+.contact-form .btn { align-self: flex-start; }
+
+/* ---- map card ---- */
+.map-card {
+  background: var(--panel);
+  min-height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.map-card address {
+  font-style: normal;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.map-card address span { color: #0b3d91; }
+
+.map-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-actions a {
+  color: var(--pink);
+  font-size: 10px;
+}
+
+.map-actions a:hover{
+  text-decoration: underline;
+}
+
+
