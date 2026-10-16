@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
+    <title>Quiz-hub</title>
+  </head>
+  <body>
+    <div class="quiz-main-container">
+      <div class="menu-bar">
+        <div class="quiz-logo">
+          <button class="quiz-icon">
+            <svg
+              width="25px"
+              height="25px"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <path
+                fill="rgb(255,255,255)"
+                d="M128 320L156.5 92C158.5 76 172.1 64 188.3 64L356.9 64C371.9 64 384 76.1 384 91.1C384 94.3 383.4 97.6 382.3 100.6L336 224L475.3 224C495.5 224 512 240.4 512 260.7C512 268.1 509.8 275.3 505.6 281.4L313.4 562.4C307.5 571 297.8 576.1 287.5 576.1L284.6 576.1C268.9 576.1 256.1 563.3 256.1 547.6C256.1 545.3 256.4 543 257 540.7L304 352L160 352C142.3 352 128 337.7 128 320z"
+              />
+            </svg>
+          </button>
+          <h3 class="web-name">QuizHub</h3>
+        </div>
+        <div class="nav-bar">
+          <div class="home nav-bar-child active">
+            <div class="home-icon icon">
+              <svg
+                width="20px"
+                height="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  fill="rgb(0, 0, 0)"
+                  d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z"
+                />
+              </svg>
+            </div>
+            <p>Home</p>
+          </div>
+          <div class="highscores nav-bar-child">
+            <div class="highscores-icon icon">
+              <svg
+                width="20px"
+                height="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  fill="rgb(0, 0, 0)"
+                  d="M208.3 64L432.3 64C458.8 64 480.4 85.8 479.4 112.2C479.2 117.5 479 122.8 478.7 128L528.3 128C554.4 128 577.4 149.6 575.4 177.8C567.9 281.5 514.9 338.5 457.4 368.3C441.6 376.5 425.5 382.6 410.2 387.1C390 415.7 369 430.8 352.3 438.9L352.3 512L416.3 512C434 512 448.3 526.3 448.3 544C448.3 561.7 434 576 416.3 576L224.3 576C206.6 576 192.3 561.7 192.3 544C192.3 526.3 206.6 512 224.3 512L288.3 512L288.3 438.9C272.3 431.2 252.4 416.9 233 390.6C214.6 385.8 194.6 378.5 175.1 367.5C121 337.2 72.2 280.1 65.2 177.6C63.3 149.5 86.2 127.9 112.3 127.9L161.9 127.9C161.6 122.7 161.4 117.5 161.2 112.1C160.2 85.6 181.8 63.9 208.3 63.9zM165.5 176L113.1 176C119.3 260.7 158.2 303.1 198.3 325.6C183.9 288.3 172 239.6 165.5 176zM444 320.8C484.5 297 521.1 254.7 527.3 176L475 176C468.8 236.9 457.6 284.2 444 320.8z"
+                />
+              </svg>
+            </div>
+            <p>High Scores</p>
+          </div>
+          <div class="settings nav-bar-child">
+            <div class="settings-icon icon">
+              <svg
+                width="20px"
+                height="20px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  fill="rgb(0, 0, 0)"
+                  d="M259.1 73.5C262.1 58.7 275.2 48 290.4 48L350.2 48C365.4 48 378.5 58.7 381.5 73.5L396 143.5C410.1 149.5 423.3 157.2 435.3 166.3L503.1 143.8C517.5 139 533.3 145 540.9 158.2L570.8 210C578.4 223.2 575.7 239.8 564.3 249.9L511 297.3C511.9 304.7 512.3 312.3 512.3 320C512.3 327.7 511.8 335.3 511 342.7L564.4 390.2C575.8 400.3 578.4 417 570.9 430.1L541 481.9C533.4 495 517.6 501.1 503.2 496.3L435.4 473.8C423.3 482.9 410.1 490.5 396.1 496.6L381.7 566.5C378.6 581.4 365.5 592 350.4 592L290.6 592C275.4 592 262.3 581.3 259.3 566.5L244.9 496.6C230.8 490.6 217.7 482.9 205.6 473.8L137.5 496.3C123.1 501.1 107.3 495.1 99.7 481.9L69.8 430.1C62.2 416.9 64.9 400.3 76.3 390.2L129.7 342.7C128.8 335.3 128.4 327.7 128.4 320C128.4 312.3 128.9 304.7 129.7 297.3L76.3 249.8C64.9 239.7 62.3 223 69.8 209.9L99.7 158.1C107.3 144.9 123.1 138.9 137.5 143.7L205.3 166.2C217.4 157.1 230.6 149.5 244.6 143.4L259.1 73.5zM320.3 400C364.5 399.8 400.2 363.9 400 319.7C399.8 275.5 363.9 239.8 319.7 240C275.5 240.2 239.8 276.1 240 320.3C240.2 364.5 276.1 400.2 320.3 400z"
+                />
+              </svg>
+            </div>
+            <p>Settings</p>
+          </div>
+        </div>
+      </div>
+      <div class="quiz-bar" id="home-view">
+        <div class="welcome">
+          <div class="good-morning">
+            <h1>Good Morning!</h1>
+            <p>
+              Test your knowledgr, learn something new and challenge yourself
+              with our quiz
+            </p>
+          </div>
+        </div>
+        <div class="quiz-section">
+          <div class="category drop-down">
+            <p>Category</p>
+            <select id="select-cat" class="select" name="categories">
+              <!-- <option id="technology">Technology</option>
+              <option id="science">Science</option>
+              <option id="maths">Math</option>
+              <option id="history">History</option>
+              <option id="sports">Sports</option> -->
+            </select>
+          </div>
+          <div class="diff-level drop-down">
+            <p>Difficulty</p>
+            <select id="select-level" class="select" name="difficult levels">
+              <option id="all-level" value="all">All levels</option>
+              <option id="easy" value="easy">Easy level</option>
+              <option id="moderate" value="moderate">Moderate level</option>
+              <option id="hard" value="hard">Hard level</option>
+            </select>
+          </div>
+          <button class="start-quizz">
+            <div class="play-icon">
+              <svg
+                width="22px"
+                height="22px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+              >
+                <path
+                  fill="rgb(255,255,255)"
+                  d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"
+                />
+              </svg>
+            </div>
+            <p>Start Quiz</p>
+          </button>
+        </div>
+        <div class="choose-categories">
+          <ul id="cat-list"></ul>
+        </div>
+      </div>
+      <div class="quiz-bar" id="high-score-container" hidden>
+      <div class="high-score-header">
+        <div class="high-score-hero">
+          <h1>High Scores</h1>
+          <p>Your best results are here</p>
+        </div>
+        <button id="clear-scores" class="clear-all-btn">
+         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(0, 0, 0)" d="M262.2 48C248.9 48 236.9 56.3 232.2 68.8L216 112L120 112C106.7 112 96 122.7 96 136C96 149.3 106.7 160 120 160L520 160C533.3 160 544 149.3 544 136C544 122.7 533.3 112 520 112L424 112L407.8 68.8C403.1 56.3 391.2 48 377.8 48L262.2 48zM128 208L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 208L464 208L464 512C464 520.8 456.8 528 448 528L192 528C183.2 528 176 520.8 176 512L176 208L128 208zM288 280C288 266.7 277.3 256 264 256C250.7 256 240 266.7 240 280L240 456C240 469.3 250.7 480 264 480C277.3 480 288 469.3 288 456L288 280zM400 280C400 266.7 389.3 256 376 256C362.7 256 352 266.7 352 280L352 456C352 469.3 362.7 480 376 480C389.3 480 400 469.3 400 456L400 280z"/></svg>
+          Clear all
+        </button>
+      </div>
+
+      <table id="scores-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Score</th>
+            <th>Time</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="scores-body"></tbody>
+      </table>
+    </div>
+      <div class="quiz-start-dialog" id="question-start">
+        <dialog id="start-quiz">
+          <form id="name-form">
+            <p>Enter your name :</p>
+            <input id="user-name" type="text" name="inme" />
+            <button id="submit" type="submit">start quiz</button>
+          </form>
+        </dialog>
+        <section id="question-container" hidden>
+          <div class="quiz-top">
+            <h2 id="question-number"></h2>
+            <div class="timer" id="timer">00:00</div>
+          </div>
+          <p id="question-text"></p>
+          <div id="answer-options">
+            <ul id="option-list"></ul>
+          </div>
+          <button id="next-question">Next Question</button>
+        </section>
+        <dialog id="result-dialog">
+          <h2>Quiz completed!</h2>
+          <p id="result-text"></p>
+          <p id="result-rank"></p>
+          <form method="dialog">
+            <button class="result-btn">Close</button>
+          </form>
+        </dialog>
+      </div>
+    </div>
+    
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+/* Question screen: covers the whole page */
+#question-container {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  overflow-y: auto;
+  padding: 40px max(20px, calc((100% - 700px) / 2));
+  background-color: aliceblue;
+}
+
+/* Without this, the display rules above/below would override the hidden attribute */
+#question-container[hidden] {
+  display: none;
+}
+
+#question-number {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(129, 153, 168);
+}
+
+#question-text {
+  margin: 20px 0 28px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+#option-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.select-opt {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 14px 18px;
+  border: 2px solid rgb(205, 222, 237);
+  border-radius: 10px;
+  background-color: white;
+  color: #0f172a;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.select-opt:hover {
+  border-color: rgb(185, 202, 255);
+}
+
+.select-opt.selected {
+  border-color: var(--blue);
+  background-color: #eaf1ff;
+}
+
+/* Optional A/B/C/D badge
+.opt-letter {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 1px solid rgb(205, 222, 237);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.select-opt.selected .opt-letter {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: white;
+} */
+
+#next-question {
+  display: block;
+  margin: 28px 0 0 auto;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Result dialog */
+#result-dialog {
+  width: 320px;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#result-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#result-dialog h2 {
+  margin: 0 0 10px;
+}
+
+.result-btn {
+  margin-top: 15px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+}
+
+.low {
+  color: red;
+}
+
+.cat-card {
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+}

@@ -1,0 +1,24 @@
+@import "./menubar.css";
+@import "./quizbar.css";
+@import "./question-container.css";
+@import "./scores.css";
+
+
+:root {
+  --blue: rgb(50, 88, 255);
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.quiz-main-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}

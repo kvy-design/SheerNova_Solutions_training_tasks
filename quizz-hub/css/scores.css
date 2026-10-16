@@ -1,0 +1,84 @@
+.nav-bar-child {
+  cursor: pointer;
+}
+
+.quiz-bar[hidden] {
+  display: none;
+}
+
+.high-score-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.high-score-hero h1 {
+  margin: 0;
+}
+
+.high-score-hero p {
+  margin: 6px 0 0;
+  color: rgb(129, 153, 168);
+}
+
+.clear-all-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid rgb(205, 222, 237);
+  border-radius: 8px;
+  background: white;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clear-all-btn:hover {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+}
+
+.clear-all-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+#scores-table {
+  width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#scores-table th,
+#scores-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgb(226, 232, 240);
+}
+
+#scores-table th {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(129, 153, 168);
+}
+
+#scores-table tbody tr:hover {
+  background-color: #f5f9ff;
+}
+
+/* rank 1 stands out */
+#scores-table tbody tr:first-child td:first-child {
+  font-weight: 800;
+  color: var(--blue);
+}
+
+#scores-table .empty {
+  padding: 40px;
+  text-align: center;
+  color: rgb(129, 153, 168);
+}

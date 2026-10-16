@@ -1,0 +1,1306 @@
+{
+  "appName": "QuizHub",
+  "version": 1,
+  "categories": [
+    {
+      "id": "technology",
+      "name": "Technology",
+      "icon": "code",
+      "color": "#D9EEFF",
+      "description": "Programming and computer fundamentals",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "id": "technology-q01",
+          "question": "Which HTML tag is used to create a hyperlink?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "<link>"
+            },
+            {
+              "id": "B",
+              "text": "<a>"
+            },
+            {
+              "id": "C",
+              "text": "<href>"
+            },
+            {
+              "id": "D",
+              "text": "<hyper>"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "The <a> element creates a hyperlink. Its href attribute specifies the destination."
+        },
+        {
+          "id": "technology-q02",
+          "question": "Which CSS property changes the text color?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "font-style"
+            },
+            {
+              "id": "B",
+              "text": "background-color"
+            },
+            {
+              "id": "C",
+              "text": "color"
+            },
+            {
+              "id": "D",
+              "text": "text-decoration"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "The color property sets the foreground color of text."
+        },
+        {
+          "id": "technology-q03",
+          "question": "Which keyword declares a block-scoped variable that can be reassigned in JavaScript?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "const"
+            },
+            {
+              "id": "B",
+              "text": "let"
+            },
+            {
+              "id": "C",
+              "text": "static"
+            },
+            {
+              "id": "D",
+              "text": "define"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "let declares a block-scoped variable whose value can be reassigned."
+        },
+        {
+          "id": "technology-q04",
+          "question": "Which HTML attribute provides alternative text for an image?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "title"
+            },
+            {
+              "id": "B",
+              "text": "src"
+            },
+            {
+              "id": "C",
+              "text": "alt"
+            },
+            {
+              "id": "D",
+              "text": "name"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "The alt attribute provides a text alternative for an image."
+        },
+        {
+          "id": "technology-q05",
+          "question": "Which CSS layout system is designed primarily for arranging items in one dimension?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Flexbox"
+            },
+            {
+              "id": "B",
+              "text": "CSS Grid"
+            },
+            {
+              "id": "C",
+              "text": "Float"
+            },
+            {
+              "id": "D",
+              "text": "Position"
+            }
+          ],
+          "correctOptionId": "A",
+          "explanation": "Flexbox is primarily a one-dimensional layout system; Grid is designed for two-dimensional layouts."
+        },
+        {
+          "id": "technology-q06",
+          "question": "What does DOM stand for in web development?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Document Object Model"
+            },
+            {
+              "id": "B",
+              "text": "Data Output Method"
+            },
+            {
+              "id": "C",
+              "text": "Display Object Mode"
+            },
+            {
+              "id": "D",
+              "text": "Document Orientation Map"
+            }
+          ],
+          "correctOptionId": "A",
+          "explanation": "DOM stands for Document Object Model, the programming interface for HTML and XML documents."
+        },
+        {
+          "id": "technology-q07",
+          "question": "Which JavaScript method converts a JSON string into a JavaScript value?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "JSON.stringify()"
+            },
+            {
+              "id": "B",
+              "text": "JSON.parse()"
+            },
+            {
+              "id": "C",
+              "text": "JSON.convert()"
+            },
+            {
+              "id": "D",
+              "text": "JSON.toObject()"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "JSON.parse() parses a JSON string and produces the corresponding JavaScript value."
+        },
+        {
+          "id": "technology-q08",
+          "question": "Which HTTP method is commonly used to retrieve a resource?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "POST"
+            },
+            {
+              "id": "B",
+              "text": "PATCH"
+            },
+            {
+              "id": "C",
+              "text": "GET"
+            },
+            {
+              "id": "D",
+              "text": "DELETE"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "GET is the standard HTTP method used to retrieve a representation of a resource."
+        },
+        {
+          "id": "technology-q09",
+          "question": "Which CSS unit is relative to the font size of the root element?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "em"
+            },
+            {
+              "id": "B",
+              "text": "rem"
+            },
+            {
+              "id": "C",
+              "text": "vw"
+            },
+            {
+              "id": "D",
+              "text": "px"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "rem is relative to the root element's font size; em is relative to the relevant element's font size."
+        },
+        {
+          "id": "technology-q10",
+          "question": "What is the result of typeof [] in JavaScript?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "array"
+            },
+            {
+              "id": "B",
+              "text": "list"
+            },
+            {
+              "id": "C",
+              "text": "object"
+            },
+            {
+              "id": "D",
+              "text": "undefined"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "Arrays are objects in JavaScript, so typeof [] returns the string \"object\"."
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "icon": "flask",
+      "color": "#D9FAEA",
+      "description": "Basic science and the natural world",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "id": "science-q01",
+          "question": "Which planet is known as the Red Planet?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Venus"
+            },
+            {
+              "id": "B",
+              "text": "Mars"
+            },
+            {
+              "id": "C",
+              "text": "Jupiter"
+            },
+            {
+              "id": "D",
+              "text": "Mercury"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Mars appears reddish because iron minerals in its surface soil have oxidized, or rusted."
+        },
+        {
+          "id": "science-q02",
+          "question": "What is the chemical formula for water?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "CO₂"
+            },
+            {
+              "id": "B",
+              "text": "O₂"
+            },
+            {
+              "id": "C",
+              "text": "H₂O"
+            },
+            {
+              "id": "D",
+              "text": "NaCl"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "A water molecule contains two hydrogen atoms and one oxygen atom."
+        },
+        {
+          "id": "science-q03",
+          "question": "Which gas do plants absorb from the atmosphere during photosynthesis?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Oxygen"
+            },
+            {
+              "id": "B",
+              "text": "Nitrogen"
+            },
+            {
+              "id": "C",
+              "text": "Carbon dioxide"
+            },
+            {
+              "id": "D",
+              "text": "Hydrogen"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "Plants use carbon dioxide, water, and light energy to produce sugars during photosynthesis."
+        },
+        {
+          "id": "science-q04",
+          "question": "What is the approximate speed of light in a vacuum?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "300,000 km/s"
+            },
+            {
+              "id": "B",
+              "text": "30,000 km/s"
+            },
+            {
+              "id": "C",
+              "text": "3,000 km/s"
+            },
+            {
+              "id": "D",
+              "text": "3,000,000 km/s"
+            }
+          ],
+          "correctOptionId": "A",
+          "explanation": "Light travels at approximately 299,792 kilometres per second in a vacuum."
+        },
+        {
+          "id": "science-q05",
+          "question": "Which part of a cell contains most of its genetic material in a typical animal cell?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Cell membrane"
+            },
+            {
+              "id": "B",
+              "text": "Nucleus"
+            },
+            {
+              "id": "C",
+              "text": "Ribosome"
+            },
+            {
+              "id": "D",
+              "text": "Cytoplasm"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "The nucleus contains most of the DNA in a typical animal cell."
+        },
+        {
+          "id": "science-q06",
+          "question": "What force pulls objects toward Earth?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Magnetism"
+            },
+            {
+              "id": "B",
+              "text": "Friction"
+            },
+            {
+              "id": "C",
+              "text": "Gravity"
+            },
+            {
+              "id": "D",
+              "text": "Electricity"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "Earth's gravitational attraction pulls objects toward its centre of mass."
+        },
+        {
+          "id": "science-q07",
+          "question": "At standard atmospheric pressure, at what temperature does pure water boil on the Celsius scale?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "0°C"
+            },
+            {
+              "id": "B",
+              "text": "50°C"
+            },
+            {
+              "id": "C",
+              "text": "100°C"
+            },
+            {
+              "id": "D",
+              "text": "150°C"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "Pure water boils at 100°C at standard atmospheric pressure."
+        },
+        {
+          "id": "science-q08",
+          "question": "Which vitamin can the human body produce in the skin with sufficient sunlight exposure?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Vitamin A"
+            },
+            {
+              "id": "B",
+              "text": "Vitamin C"
+            },
+            {
+              "id": "C",
+              "text": "Vitamin D"
+            },
+            {
+              "id": "D",
+              "text": "Vitamin B12"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "UVB exposure helps the skin synthesize vitamin D."
+        },
+        {
+          "id": "science-q09",
+          "question": "What is the SI unit of electric current?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Volt"
+            },
+            {
+              "id": "B",
+              "text": "Watt"
+            },
+            {
+              "id": "C",
+              "text": "Ampere"
+            },
+            {
+              "id": "D",
+              "text": "Ohm"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "The ampere is the SI base unit for electric current."
+        },
+        {
+          "id": "science-q10",
+          "question": "Which blood cells primarily help transport oxygen around the body?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Platelets"
+            },
+            {
+              "id": "B",
+              "text": "Red blood cells"
+            },
+            {
+              "id": "C",
+              "text": "White blood cells"
+            },
+            {
+              "id": "D",
+              "text": "Plasma cells"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Red blood cells contain haemoglobin, which binds and transports oxygen."
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "name": "Math",
+      "icon": "calculator",
+      "color": "#E9E0FF",
+      "description": "Arithmetic and mathematical reasoning",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "id": "math-q01",
+          "question": "What is 12 × 8?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "84"
+            },
+            {
+              "id": "B",
+              "text": "96"
+            },
+            {
+              "id": "C",
+              "text": "108"
+            },
+            {
+              "id": "D",
+              "text": "88"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "12 multiplied by 8 equals 96."
+        },
+        {
+          "id": "math-q02",
+          "question": "What is 15% of 200?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "15"
+            },
+            {
+              "id": "B",
+              "text": "20"
+            },
+            {
+              "id": "C",
+              "text": "30"
+            },
+            {
+              "id": "D",
+              "text": "35"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "15% of 200 is 0.15 × 200 = 30."
+        },
+        {
+          "id": "math-q03",
+          "question": "What is the square root of 144?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "10"
+            },
+            {
+              "id": "B",
+              "text": "11"
+            },
+            {
+              "id": "C",
+              "text": "12"
+            },
+            {
+              "id": "D",
+              "text": "14"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "12 × 12 = 144, so the principal square root is 12."
+        },
+        {
+          "id": "math-q04",
+          "question": "Solve: 3x + 5 = 20.",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "x = 3"
+            },
+            {
+              "id": "B",
+              "text": "x = 5"
+            },
+            {
+              "id": "C",
+              "text": "x = 7"
+            },
+            {
+              "id": "D",
+              "text": "x = 10"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Subtract 5 from both sides to get 3x = 15, then divide by 3 to get x = 5."
+        },
+        {
+          "id": "math-q05",
+          "question": "What is the perimeter of a rectangle with length 8 cm and width 3 cm?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "11 cm"
+            },
+            {
+              "id": "B",
+              "text": "22 cm"
+            },
+            {
+              "id": "C",
+              "text": "24 cm"
+            },
+            {
+              "id": "D",
+              "text": "16 cm"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Perimeter = 2 × (length + width) = 2 × (8 + 3) = 22 cm."
+        },
+        {
+          "id": "math-q06",
+          "question": "Which of these numbers is prime?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "21"
+            },
+            {
+              "id": "B",
+              "text": "27"
+            },
+            {
+              "id": "C",
+              "text": "29"
+            },
+            {
+              "id": "D",
+              "text": "33"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "29 has no positive divisors other than 1 and 29, so it is prime."
+        },
+        {
+          "id": "math-q07",
+          "question": "What is 2/3 + 1/6?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "1/2"
+            },
+            {
+              "id": "B",
+              "text": "5/6"
+            },
+            {
+              "id": "C",
+              "text": "3/9"
+            },
+            {
+              "id": "D",
+              "text": "1"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Convert 2/3 to 4/6; then 4/6 + 1/6 = 5/6."
+        },
+        {
+          "id": "math-q08",
+          "question": "A triangle has angles of 45° and 65°. What is its third angle?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "60°"
+            },
+            {
+              "id": "B",
+              "text": "70°"
+            },
+            {
+              "id": "C",
+              "text": "80°"
+            },
+            {
+              "id": "D",
+              "text": "90°"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Triangle angles total 180°, so the third angle is 180° − 45° − 65° = 70°."
+        },
+        {
+          "id": "math-q09",
+          "question": "What is the median of 3, 7, 9, 12, 15?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "7"
+            },
+            {
+              "id": "B",
+              "text": "9"
+            },
+            {
+              "id": "C",
+              "text": "10"
+            },
+            {
+              "id": "D",
+              "text": "12"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "The values are already ordered, and the middle value is 9."
+        },
+        {
+          "id": "math-q10",
+          "question": "If a fair six-sided die is rolled once, what is the probability of rolling an even number?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "1/6"
+            },
+            {
+              "id": "B",
+              "text": "1/3"
+            },
+            {
+              "id": "C",
+              "text": "1/2"
+            },
+            {
+              "id": "D",
+              "text": "2/3"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "The even outcomes are 2, 4, and 6: 3 favourable outcomes out of 6, giving 1/2."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "name": "History",
+      "icon": "landmark",
+      "color": "#FFE9C9",
+      "description": "Historical events and civilizations",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "id": "history-q01",
+          "question": "In which year did India gain independence from British rule?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "1942"
+            },
+            {
+              "id": "B",
+              "text": "1945"
+            },
+            {
+              "id": "C",
+              "text": "1947"
+            },
+            {
+              "id": "D",
+              "text": "1950"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "India became independent on 15 August 1947."
+        },
+        {
+          "id": "history-q02",
+          "question": "Who was the first person to walk on the Moon?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Yuri Gagarin"
+            },
+            {
+              "id": "B",
+              "text": "Neil Armstrong"
+            },
+            {
+              "id": "C",
+              "text": "Buzz Aldrin"
+            },
+            {
+              "id": "D",
+              "text": "Michael Collins"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Neil Armstrong stepped onto the lunar surface during Apollo 11 in July 1969."
+        },
+        {
+          "id": "history-q03",
+          "question": "Which ancient civilization built the pyramids at Giza?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Romans"
+            },
+            {
+              "id": "B",
+              "text": "Ancient Egyptians"
+            },
+            {
+              "id": "C",
+              "text": "Mayans"
+            },
+            {
+              "id": "D",
+              "text": "Persians"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "The pyramids at Giza were built in ancient Egypt during the Old Kingdom."
+        },
+        {
+          "id": "history-q04",
+          "question": "Who was the first Prime Minister of independent India?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Sardar Vallabhbhai Patel"
+            },
+            {
+              "id": "B",
+              "text": "Jawaharlal Nehru"
+            },
+            {
+              "id": "C",
+              "text": "Rajendra Prasad"
+            },
+            {
+              "id": "D",
+              "text": "Lal Bahadur Shastri"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Jawaharlal Nehru became India's first prime minister in August 1947."
+        },
+        {
+          "id": "history-q05",
+          "question": "The Renaissance began in which part of Europe?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Scandinavia"
+            },
+            {
+              "id": "B",
+              "text": "Italy"
+            },
+            {
+              "id": "C",
+              "text": "Russia"
+            },
+            {
+              "id": "D",
+              "text": "Ireland"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "The Renaissance began in Italy before spreading to other parts of Europe."
+        },
+        {
+          "id": "history-q06",
+          "question": "Which wall was opened at the Brandenburg Gate area in 1989 after decades of division?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Hadrian's Wall"
+            },
+            {
+              "id": "B",
+              "text": "Great Wall of China"
+            },
+            {
+              "id": "C",
+              "text": "Berlin Wall"
+            },
+            {
+              "id": "D",
+              "text": "Western Wall"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "The fall of the Berlin Wall in 1989 became a major symbol of the end of the Cold War division in Europe."
+        },
+        {
+          "id": "history-q07",
+          "question": "Who is commonly credited with developing the movable-type printing press in Europe around the mid-15th century?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Johannes Gutenberg"
+            },
+            {
+              "id": "B",
+              "text": "Leonardo da Vinci"
+            },
+            {
+              "id": "C",
+              "text": "Galileo Galilei"
+            },
+            {
+              "id": "D",
+              "text": "Nicolaus Copernicus"
+            }
+          ],
+          "correctOptionId": "A",
+          "explanation": "Johannes Gutenberg is credited with developing a practical movable-type printing system in Europe."
+        },
+        {
+          "id": "history-q08",
+          "question": "Which empire was ruled by Julius Caesar before the establishment of the Roman Empire under Augustus?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Mongol Republic"
+            },
+            {
+              "id": "B",
+              "text": "Roman Republic"
+            },
+            {
+              "id": "C",
+              "text": "Byzantine Empire"
+            },
+            {
+              "id": "D",
+              "text": "Ottoman Empire"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Julius Caesar was a leader of the Roman Republic; Augustus later became the first Roman emperor."
+        },
+        {
+          "id": "history-q09",
+          "question": "In which year did the First World War end with the armistice on the Western Front?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "1914"
+            },
+            {
+              "id": "B",
+              "text": "1916"
+            },
+            {
+              "id": "C",
+              "text": "1918"
+            },
+            {
+              "id": "D",
+              "text": "1921"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "The armistice ending fighting on the Western Front took effect on 11 November 1918."
+        },
+        {
+          "id": "history-q10",
+          "question": "Which Indian emperor is strongly associated with the spread of Buddhism after the Kalinga War?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Chandragupta II"
+            },
+            {
+              "id": "B",
+              "text": "Ashoka"
+            },
+            {
+              "id": "C",
+              "text": "Harsha"
+            },
+            {
+              "id": "D",
+              "text": "Akbar"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Mauryan emperor Ashoka supported and helped spread Buddhism after the Kalinga War."
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "icon": "trophy",
+      "color": "#FFE0E7",
+      "description": "Sports rules, events, and general knowledge",
+      "totalQuestions": 10,
+      "questions": [
+        {
+          "id": "sports-q01",
+          "question": "How many players from one team are on the field in a standard football (soccer) match?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "9"
+            },
+            {
+              "id": "B",
+              "text": "10"
+            },
+            {
+              "id": "C",
+              "text": "11"
+            },
+            {
+              "id": "D",
+              "text": "12"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "A standard football team has 11 players on the field, including the goalkeeper."
+        },
+        {
+          "id": "sports-q02",
+          "question": "How many rings appear on the Olympic symbol?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "4"
+            },
+            {
+              "id": "B",
+              "text": "5"
+            },
+            {
+              "id": "C",
+              "text": "6"
+            },
+            {
+              "id": "D",
+              "text": "7"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "The Olympic symbol consists of five interlaced rings."
+        },
+        {
+          "id": "sports-q03",
+          "question": "In cricket, how many runs are scored when the ball reaches the boundary after bouncing in the field?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "2"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "6"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "A boundary after the ball has touched the field scores four runs under standard cricket rules."
+        },
+        {
+          "id": "sports-q04",
+          "question": "Which sport uses the terms love, deuce, and advantage?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Badminton"
+            },
+            {
+              "id": "B",
+              "text": "Tennis"
+            },
+            {
+              "id": "C",
+              "text": "Volleyball"
+            },
+            {
+              "id": "D",
+              "text": "Table tennis"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Love, deuce, and advantage are terms used in tennis scoring."
+        },
+        {
+          "id": "sports-q05",
+          "question": "How many points is a successful free throw worth in basketball?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "2"
+            },
+            {
+              "id": "C",
+              "text": "3"
+            },
+            {
+              "id": "D",
+              "text": "4"
+            }
+          ],
+          "correctOptionId": "A",
+          "explanation": "A successful free throw is worth one point."
+        },
+        {
+          "id": "sports-q06",
+          "question": "Which country hosted the 2016 Summer Olympic Games?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "China"
+            },
+            {
+              "id": "B",
+              "text": "Brazil"
+            },
+            {
+              "id": "C",
+              "text": "United Kingdom"
+            },
+            {
+              "id": "D",
+              "text": "Japan"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Rio de Janeiro, Brazil, hosted the 2016 Summer Olympics."
+        },
+        {
+          "id": "sports-q07",
+          "question": "In badminton, what is the object hit back and forth over the net called?",
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "Puck"
+            },
+            {
+              "id": "B",
+              "text": "Shuttlecock"
+            },
+            {
+              "id": "C",
+              "text": "Pellet"
+            },
+            {
+              "id": "D",
+              "text": "Bowling pin"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "Players hit a shuttlecock, also called a shuttle, across the net."
+        },
+        {
+          "id": "sports-q08",
+          "question": "How long is a standard outdoor athletics track lap in the innermost lane?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "200 metres"
+            },
+            {
+              "id": "B",
+              "text": "300 metres"
+            },
+            {
+              "id": "C",
+              "text": "400 metres"
+            },
+            {
+              "id": "D",
+              "text": "500 metres"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "A standard outdoor athletics track is 400 metres per lap in lane one."
+        },
+        {
+          "id": "sports-q09",
+          "question": "Which chess piece moves diagonally any number of unobstructed squares?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "Rook"
+            },
+            {
+              "id": "B",
+              "text": "Knight"
+            },
+            {
+              "id": "C",
+              "text": "Bishop"
+            },
+            {
+              "id": "D",
+              "text": "King"
+            }
+          ],
+          "correctOptionId": "C",
+          "explanation": "A bishop moves diagonally along unobstructed squares."
+        },
+        {
+          "id": "sports-q10",
+          "question": "In volleyball, how many times may a team usually contact the ball before returning it over the net, excluding a block touch?",
+          "difficulty": "medium",
+          "options": [
+            {
+              "id": "A",
+              "text": "2"
+            },
+            {
+              "id": "B",
+              "text": "3"
+            },
+            {
+              "id": "C",
+              "text": "4"
+            },
+            {
+              "id": "D",
+              "text": "5"
+            }
+          ],
+          "correctOptionId": "B",
+          "explanation": "A team is generally allowed up to three hits to return the ball, with a block touch not counting as one of those hits."
+        }
+      ]
+    }
+  ]
+}
