@@ -1,0 +1,104 @@
+1. Find the Second Largest Number: Given an array of numbers, find the second-largest different number without sorting the array.
+Example: [10, 25, 8, 25, 18] → 18
+
+2. Remove Duplicate Numbers: Create a new array containing each number only once. Do not use Set.
+Example: [2, 4, 2, 6, 4, 8] → [2, 4, 6, 8]
+
+
+3. Find Missing Numbers: An array should contain all numbers from 1 to 10, but some numbers are missing. Find the missing ones.
+Example: [1, 2, 4, 6, 9, 10] → [3, 5, 7, 8]
+
+
+4. Move Zeros to the End: Move every zero to the end of the array without changing the order of the other numbers.
+Example: [0, 5, 0, 3, 8, 0, 2] → [5, 3, 8, 2, 0, 0, 0]
+
+
+5. Find Common Numbers: Find the numbers that appear in both arrays. Each result should appear only once.
+Example: [1, 2, 3, 4] and [3, 4, 5, 6] → [3, 4]
+
+
+6. Find the Most Frequent Number: Find the number that appears the most times. If multiple numbers have the same highest count, return all of them.
+Example: [2, 3, 2, 3, 5] → [2, 3]
+
+
+7. Separate Even and Odd Numbers: Divide an array into two arrays: one for even numbers and one for odd numbers.
+Example: [1, 2, 3, 4, 5, 6] → { even: [2, 4, 6], odd: [1, 3, 5] }
+
+
+8. Reverse an Array: Create a new array with the elements in reverse order. Do not use reverse().
+Example: [10, 20, 30, 40] → [40, 30, 20, 10]
+
+9. Find Number Pairs: Given an array and a target number, find all pairs of different elements whose sum equals the target.
+Example: [2, 4, 3, 5, 7], target 9 → [[2, 7], [4, 5]]
+
+10. Rotate an Array: Move the last element to the beginning of the array K times.
+Example: [1, 2, 3, 4, 5], K = 2 → [4, 5, 1, 2, 3]
+
+11. Count Words: Count how many times each word appears in a sentence. Treat uppercase and lowercase versions of a word as the same.
+Example: "apple mango apple mango apple" → { apple: 3, mango: 2 }
+
+12. Count Repeated Names: Given an array of names, create an object showing how many times each name appears.
+Example: ["Amit", "Priya", "Amit", "Raj", "Priya", "Amit"] → { Amit: 3, Priya: 2, Raj: 1 }
+
+13. Group Employees by Department: Given employee objects, group their names by department and count how many employees belong to each department.
+Example:
+[
+  { name: "Amit", department: "IT" },
+  { name: "Priya", department: "HR" },
+  { name: "Raj", department: "IT" }
+]
+Expected result: { IT: { employees: ["Amit", "Raj"], count: 2 }, HR: { employees: ["Priya"], count: 1 } }
+
+14. Merge Two Objects: Combine two objects. If the same key exists in both, add the numbers instead of replacing the first value.
+Example: { apple: 10, mango: 5 } and { apple: 20, orange: 8 } → { apple: 30, mango: 5, orange: 8 }
+
+15. Highest Salary in Each Department: Given employees and their salaries, find the highest-paid employee in every department. If employees have the same highest salary, include all of them.
+
+16. Compare Two Objects: Given two objects, find which keys have different values, including keys that exist in only one object.
+Example: { name: "Amit", age: 22 } and { name: "Amit", age: 23, city: "Pune" } → report age as changed and city as added.
+
+17. Group Data Using a Field: Given a list of students, group them by their class. Each class should contain the names of its students.
+Example: [{name:"Amit",class:"A"},{name:"Priya",class:"B"},{name:"Raj",class:"A"}] → { A: ["Amit", "Raj"], B: ["Priya"] }
+
+18. Find Duplicate Emails: Find email addresses that belong to multiple users. Ignore uppercase/lowercase differences and extra spaces.
+Example: ["amit@gmail.com", " AMIT@gmail.com ", "raj@gmail.com"] → ["amit@gmail.com"]
+
+19. Calculate Student Rankings: Each student has marks in several subjects. Calculate the average marks and arrange students from highest to lowest. If two students have the same average, sort their names alphabetically.
+
+20. Calculate Employee Sales: Given sales records, calculate each employee's total sales, number of sales, and average sales amount.
+
+21. Find Three Products Within a Budget: Given products and their prices, select exactly three different products whose total price is as close as possible to the budget without exceeding it.
+
+22. Combine Duplicate Products: Some product records have the same product ID. Combine records with matching IDs by adding their quantities, while keeping the other product details.
+
+23. Compare User Lists: Compare an old user list with a new one. Find users who were added, users who were removed, and existing users whose details changed. Use the user ID to identify each person.
+
+24. Find Consecutive Absences: Given employee attendance records, find employees who were absent for three or more consecutive working days. Weekends should not break the sequence.
+
+25. Find Customers Who Bought Every Category: Given customer purchase records, find customers who have purchased at least one product from every category in a required list.
+
+26. Create a Customer Spending Report: Given customer orders, calculate each customer's total spending, most frequently purchased product, and date of their latest order.
+
+27. Build a Category Tree: Categories are stored in a flat array. Each category has an ID and a parent ID. Convert the list into a tree where child categories appear inside their parent categories.
+
+
+28. Flatten a Nested Object: Convert a nested object into a flat object using dot-separated keys.
+Example: { user: { name: "Amit", address: { city: "Pune" } } } → { "user.name": "Amit", "user.address.city": "Pune" }
+
+29. Calculate Final Inventory: Given current stock and a list of incoming and outgoing stock transactions, calculate the final quantity of every product. Also identify transactions that would cause stock to fall below zero.
+
+30. Find Appointment Conflicts: Given clinician appointment records with start and end times, find pairs of appointments that overlap for the same clinician.
+
+31. Remove the Smallest Section: Find the shortest continuous section of an array that can be removed so that no duplicate numbers remain in the remaining array.
+
+32. Identify Duplicate Transactions: Given financial transactions, identify possible duplicates using the user ID, amount, transaction type, and timestamp. Treat transactions within a specified time window as possible duplicates.
+
+33. Department Salary Report: For each department, calculate the number of employees, average salary, highest and lowest salaries, and names of all employees tied for the highest salary.
+
+34. Top Three Products by Revenue: Given order records, calculate revenue for each product and return the top three. Account for discounts, cancelled orders, and returned quantities.
+
+35. Compare Nested Objects: Compare two nested objects and report all added, removed, or changed values, including the full path to each changed field.
+
+36. Task Dependency Order: Each task lists the tasks that must be completed before it can start. Find a valid task execution order and identify circular dependencies that make completion impossible.
+
+
